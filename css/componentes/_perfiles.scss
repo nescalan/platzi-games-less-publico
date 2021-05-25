@@ -29,19 +29,20 @@
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-    @include titulos($Fuente2);
     color: $color-claro;
+    @include titulos($Fuente2);
     background-color: get-opacity($color-primario, 0.2);
     border: 2px solid get-opacity($color-claro, 0.3);
   }
 }
+
 .perfil__minibio {
   margin: 0 auto;
   padding-top: 20px;
   h2 {
-    @extend .perfil__nombre; // aquí se realiza el "extend"
+    @extend .perfil__nombre;
   }
   h3 {
-    @extend .perfil__titulo; // aquí se realiza el "extend"
+    @extend .perfil__titulo;
   }
 }
